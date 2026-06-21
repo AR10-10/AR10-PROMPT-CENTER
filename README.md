@@ -5,11 +5,13 @@ Central premium **NEBULA PromptOps AR10**: uma página estática para organizar 
 ## Status
 
 - **Entrada principal:** `index.html`
+- **Release ativa:** `10.2.1_FINAL_POLISH`
+- **Acervo atual:** 275 prompts em 35 gavetas, com IDs e sequências únicos
 - **Tipo:** site estático, sem backend obrigatório
 - **Build:** não requer build, bundler, servidor Node ou dependências externas
 - **Publicação-alvo:** GitHub Pages via branch `main` / pasta root (`/`)
 - **Link público esperado:** `https://ar10-10.github.io/AR10-PROMPT-CENTER/`
-- **Modo aplicativo:** PWA progressivo com `manifest.webmanifest`, `service-worker.js`, ícone NEBULA e suporte a “Adicionar à Tela de Início”
+- **Modo aplicativo:** PWA progressivo com `manifest.webmanifest`, cache versionado, ícones PNG/SVG e suporte a “Adicionar à Tela de Início”
 - **Compatibilidade-alvo:** Safari/iPadOS, Safari/macOS e navegadores modernos
 - **Segurança:** não usar API keys, tokens, segredos, `.env` real ou credenciais no front-end
 
@@ -21,6 +23,8 @@ Central premium **NEBULA PromptOps AR10**: uma página estática para organizar 
 - `manifest.webmanifest` — manifesto PWA para instalação progressiva como aplicativo.
 - `service-worker.js` — cache estático simples para abertura rápida/offline após primeira visita.
 - `assets/nebula-icon.svg` — ícone NEBULA/Siriform para navegador, PWA e tela inicial.
+- `assets/nebula-icon-192.png` e `assets/nebula-icon-512.png` — ícones raster para instalação PWA.
+- `assets/apple-touch-icon.png` — ícone dedicado à Tela de Início no iPad/iPhone.
 - `.nojekyll` — garante publicação direta dos arquivos estáticos no GitHub Pages.
 - `README.md` — instruções de uso e publicação.
 
@@ -95,6 +99,8 @@ Como o projeto é estático, não há etapa obrigatória de instalação ou buil
 - Não adicionar backend obrigatório.
 - Não adicionar chaves, tokens, segredos ou credenciais.
 - Manter o projeto simples, rápido e publicável no GitHub Pages.
+- Antes de adicionar prompts ou gavetas, validar IDs, sequências, nomes e sobreposição temática para impedir duplicações.
+- Registrar novas famílias de trabalho em uma taxonomia estável antes de ampliar o acervo.
 
 ## Próximos passos seguros
 
