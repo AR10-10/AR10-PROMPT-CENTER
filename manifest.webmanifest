@@ -1,0 +1,21 @@
+{
+  "name": "NEBULA PromptOps AR10",
+  "short_name": "NEBULA",
+  "description": "Central NEBULA PromptOps AR10: biblioteca estática premium de prompts com Siriform Voice, Handoff/QA e Clean Room.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "browser"],
+  "orientation": "portrait-primary",
+  "background_color": "#050712",
+  "theme_color": "#050712",
+  "lang": "pt-BR",
+  "categories": ["productivity", "utilities", "developer"],
+  "icons": [
+    { "src": "assets/nebula-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Abrir Biblioteca", "short_name": "Biblioteca", "url": "./index.html#library", "description": "Abrir a biblioteca de prompts." },
+    { "name": "Handoff/QA", "short_name": "QA", "url": "./index.html#handoff", "description": "Abrir ferramentas de Handoff e QA." }
+  ]
+}
